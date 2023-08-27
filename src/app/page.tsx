@@ -1,4 +1,5 @@
 import AvatarBox from '@/components/AvatarBox'
+import Stack from '@/components/Stack'
 import Bio from '@/layout/Bio'
 import FeaturedProjects from '@/layout/FeaturedProjects'
 import Image from 'next/image'
@@ -20,6 +21,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Stack />
       <FeaturedProjects />
     </main>
   )

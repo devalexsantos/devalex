@@ -40,7 +40,7 @@ export default function Bio() {
           </Popover>
           .
         </p>
-        <p className="mt-4">
+        <p className="mt-4 text-[#fff]">
           Resolvo problemas de empresas através da tecnologia. Estou sempre
           criando algum site, landing page, loja virtual, ou qualquer outro
           projeto de internet.

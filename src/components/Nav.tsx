@@ -4,6 +4,7 @@ import {
   HoverCardTrigger,
 } from '@/components/ui/hover-card'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Nav() {
   return (
@@ -21,7 +22,18 @@ export default function Nav() {
         />
         SOURCE
       </HoverCardTrigger>
-      <HoverCardContent>Veja o código fonte deste site.</HoverCardContent>
+      <HoverCardContent>
+        <Link
+          href="https://github.com/devalexsantos/devalex"
+          className="hover:underline"
+          target="_blank"
+        >
+          Clique para ver o código fonte deste site no GitHub.
+        </Link>
+        <p className="text-xs mt-2">
+          (React / Next.js, Typescript, Server Components, Tailwind)
+        </p>
+      </HoverCardContent>
     </HoverCard>
   )
 }
