@@ -1,37 +1,27 @@
 import {
-    Menubar,
-    MenubarMenu,
-    MenubarTrigger,
-  } from "@/components/ui/menubar"
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '@/components/ui/hover-card'
+import Image from 'next/image'
 
-export default function Nav(){
-    return (
-        <Menubar className="bg-zinc-800 rounded-full border-none">
-            <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer rounded-full">
-                    Início
-                </MenubarTrigger>
-            </MenubarMenu>
-            <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer rounded-full">
-                    Sobre
-                </MenubarTrigger>
-            </MenubarMenu>
-            <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer rounded-full">
-                    Posts
-                </MenubarTrigger>
-            </MenubarMenu>
-            <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer rounded-full">
-                    Projetos
-                </MenubarTrigger>
-            </MenubarMenu>
-            <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer rounded-full">
-                    Contato
-                </MenubarTrigger>
-            </MenubarMenu>
-        </Menubar>
-    )
+export default function Nav() {
+  return (
+    <HoverCard openDelay={0}>
+      <HoverCardTrigger
+        href="https://github.com/devalexsantos/devalex"
+        target="_blank"
+        className="flex gap-2 items-center"
+      >
+        <Image
+          src="./assets/source-code.svg"
+          width={24}
+          height={24}
+          alt="Ícone de Código Fonte"
+        />
+        SOURCE
+      </HoverCardTrigger>
+      <HoverCardContent>Veja o código fonte deste site.</HoverCardContent>
+    </HoverCard>
+  )
 }
