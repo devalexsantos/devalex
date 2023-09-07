@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import IconInstagram from './icons/IconInstagram'
 import IconLinkedin from './icons/IconLinkedin'
 import IconGithub from './icons/IconGithub'
@@ -9,7 +8,7 @@ export default function AvatarBox() {
     <div className="font-light text-zinc-400 flex flex-col justify-center items-center gap-3 md:flex-row md:justify-normal">
       <ul className="flex gap-3 text-center">
         <li className="flex gap-1 items-center">
-          <Link href="https://www.instagram.com/devalex.com.br" target="_blank">
+          <Link href="https://www.instagram.com/devalex" target="_blank">
             <IconInstagram width={28} height={28} />
           </Link>
         </li>
