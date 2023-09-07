@@ -48,16 +48,55 @@ export default function FeaturedProjects() {
       image: {
         url: '/assets/projects/camarote-casa-da-barra.jpg',
       },
+      badges: ['WordPress', 'Javascript', 'WooCommerce'],
     },
     {
       id: 4,
       title: 'Maison do Vidro',
       shortDescription: 'Site Institucional',
-      longDescription: '',
+      longDescription:
+        'Site Institucional feito para uma empresa de instalação e venda de produtos Reiki. O site foi solicitado em WordPress para que o cleinte tivesse facilidade em alterar.',
       url: 'https://maisondovidro.com.br',
       image: {
         url: '/assets/projects/maison-do-vidro.jpg',
       },
+      badges: ['WordPress', 'Javascript', 'PHP'],
+    },
+    {
+      id: 5,
+      title: 'Casa do Lavrador',
+      shortDescription: 'Site Institucional',
+      longDescription:
+        'Site Institucional feito para a empresa Casa Do Lavrador, o objetivo foi divulgar as suas unidades físicas e que fosse um site fácil de gerenciar através do WordPress',
+      url: 'https://casadolavrador.com.br',
+      image: {
+        url: '/assets/projects/casa-do-lavrador.jpg',
+      },
+      badges: ['WordPress', 'Javascript', 'PHP'],
+    },
+    {
+      id: 6,
+      title: 'All Storage',
+      shortDescription: 'Site Institucional',
+      longDescription:
+        'Site Institucional feito para a empresa All Storage. Um desafio bacana deste projeto é que criei uma calculadora de espaço, onde o cliente seleciona seus móveis, a quantidade e então o sistema fala exatamente quanto espaço ele precisa. Utilizei React para fazer isso.',
+      url: 'https://allstorage.com.br',
+      image: {
+        url: '/assets/projects/allstorage.jpg',
+      },
+      badges: ['React', 'WordPress', 'PHP'],
+    },
+    {
+      id: 7,
+      title: 'Trapiche Barnabé',
+      shortDescription: 'Site Institucional',
+      longDescription:
+        'Site Institucional feito para a empresa de casa de eventos Trapiche Barnabé. O cliente solicitou que o site fosse feito em WordPress e o desafio deste projeto foi trazer um carregamento rápido para um site com bastante imagem. Utilizei bastante configuração de CDN e Cache pra isso.',
+      url: 'https://trapichebarnabe.com.br',
+      image: {
+        url: '/assets/projects/trapiche-barnabe.jpg',
+      },
+      badges: ['WordPress', 'Javascript', 'PHP'],
     },
   ]
 

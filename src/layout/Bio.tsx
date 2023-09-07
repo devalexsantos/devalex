@@ -59,7 +59,7 @@ export default function Bio() {
               height={22}
               alt="Logo do WhatsApp"
             />
-            Vamos construir algo juntos?
+            Conversar comigo
           </Button>
         </Link>
       </SubTitle>
