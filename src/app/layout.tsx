@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import Footer from '@/layout/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${poppins.className} text-zinc-100`}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
