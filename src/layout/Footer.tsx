@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="m-auto max-w-5xl py-10 px-4">
       <Card className="bg-zinc-950 bg-opacity-50 border-none">
         <CardHeader className="items-center sm:items-start">
-          <CardTitle className="text-white">
+          <CardTitle className="text-white text-center">
             Vamos construir algo juntos?
           </CardTitle>
           <CardDescription>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
           <AvatarBox />
         </CardContent>
-        <CardFooter className="text-zinc-400 text-sm">
+        <CardFooter className="text-zinc-400 text-sm text-center">
           <p>©Copyright - Alex Santos - 2023 - CNPJ: 49.957.258/0001-70</p>
         </CardFooter>
       </Card>
