@@ -37,7 +37,7 @@ export default function Project({ project }: ProjectProps) {
   return (
     <Dialog>
       <DialogTrigger className="text-left">
-        <Card className="w-full sm:w-[300px] h-[300px] text-zinc-100 bg-zinc-900 hover:bg-zinc-950 border-zinc-800">
+        <Card className="w-full sm:w-[300px] h-[290px] text-zinc-100 bg-zinc-900 hover:bg-zinc-950 border-zinc-800">
           <CardHeader>
             <Image
               src={project.image.url}

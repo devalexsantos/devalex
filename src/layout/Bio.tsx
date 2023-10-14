@@ -12,7 +12,7 @@ import Link from 'next/link'
 export default function Bio() {
   return (
     <div className="max-w-[470px]">
-      <Title text="Desenvolvedor Front-end e Consultor, eu crio soluções através da tecnologia." />
+      <Title text="Desenvolvedor Front-end, eu crio soluções através da tecnologia." />
       <SubTitle>
         <p>
           Olá, meu nome é Alex Santos, tenho 30 anos e trabalho há{' '}
@@ -28,7 +28,17 @@ export default function Bio() {
               <strong>Dashboards Corporativos</strong>, etc.
             </PopoverContent>
           </Popover>{' '}
-          e Consultor.
+          e{' '}
+          <Popover>
+            <PopoverTrigger className="underline">Designer</PopoverTrigger>
+            <PopoverContent className="text-zinc-700">
+              <strong>Certificado Adobe</strong> em todas as ferramentas de
+              Design Gráfico da Adobe, domínio completo do{' '}
+              <strong>Figma</strong> e mais de <strong>10 anos</strong> atuando
+              com tarefas de Design.
+            </PopoverContent>
+          </Popover>
+          .
         </p>
         <p className="mt-4 text-[#fff]">
           Resolvo problemas de empresas através da tecnologia. Estou sempre
