@@ -16,22 +16,6 @@ export default function FeaturedProjects() {
         Projetos legais que criei ou participei
       </h2>
       <div className="flex flex-wrap gap-2 justify-center sm:justify-normal items-start">
-        <div className="w-full flex gap-3 justify-between mt-4 pl-3 pr-8">
-          <div className="prev-element-swiper pointer flex items-center cursor-pointer">
-            <IconArrowLeftCircle
-              width={28}
-              height={28}
-              // className="opacity-25 hover:opacity-100"
-            />
-          </div>
-          <div className="next-element-swiper pointer flex items-center cursor-pointer rotate-180">
-            <IconArrowLeftCircle
-              width={28}
-              height={28}
-              // className="opacity-25 hover:opacity-100"
-            />
-          </div>
-        </div>
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={-50}
@@ -44,7 +28,7 @@ export default function FeaturedProjects() {
           breakpoints={{
             320: {
               slidesPerView: 1,
-              spaceBetween: -20,
+              spaceBetween: 0,
             },
             480: {
               slidesPerView: 2,
@@ -56,6 +40,22 @@ export default function FeaturedProjects() {
             },
           }}
         >
+          <div className="w-full flex gap-3 justify-between mt-4 pl-3">
+            <div className="prev-element-swiper pointer flex items-center cursor-pointer">
+              <IconArrowLeftCircle
+                width={28}
+                height={28}
+                className="opacity-25 hover:opacity-100"
+              />
+            </div>
+            <div className="next-element-swiper pointer flex items-center cursor-pointer rotate-180">
+              <IconArrowLeftCircle
+                width={28}
+                height={28}
+                className="opacity-25 hover:opacity-100"
+              />
+            </div>
+          </div>
           {projects.map((item) => (
             <SwiperSlide key={item.id}>
               <Project project={item} />
